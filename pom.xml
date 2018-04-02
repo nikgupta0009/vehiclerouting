@@ -62,9 +62,14 @@
             <artifactId>maven-war-plugin</artifactId>
             <version>2.3</version>
             <configuration>
-             <warName>${name}</warName>
+             <warName>${project.name}</warName>
              <outputDirectory>${project.build.directory}/wildfly-10.1.0.Final/standalone/deployments/</outputDirectory>
             </configuration>
+			 <executions>
+			<execution>
+            <phase>package</phase>
+			</execution>
+        </executions>
         </plugin>
     </plugins>
   </build>
