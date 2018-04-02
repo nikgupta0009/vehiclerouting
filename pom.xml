@@ -33,6 +33,7 @@
       </testResource>
     </testResources>
     <plugins>
+	  
       <plugin>
         <artifactId>maven-dependency-plugin</artifactId>
         <executions>
@@ -54,6 +55,11 @@
                 </artifactItem>
               </artifactItems>
             </configuration>
+          </execution>
+		  <execution>
+            <id>copy-dependencies</id>
+            <phase>package</phase>
+            <goals><goal>copy-dependencies</goal></goals>
           </execution>
         </executions>
       </plugin>
