@@ -1,1 +1,1 @@
-web: target/wildfly-10.1.0.Final/bin/standalone.sh -Djboss.http.port=$PORT -b 0.0.0.0 --force target/*.war
+web: $JBOSS_HOME/bin/standalone.sh -b=0.0.0.0 -Djboss.http.port=$PORT

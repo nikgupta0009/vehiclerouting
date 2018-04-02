@@ -62,24 +62,23 @@
             <goals><goal>copy-dependencies</goal></goals>
           </execution>
 		  <execution>
-            <id>unpack-wildfly</id>
-            <phase>package</phase>
-            <goals>
-              <goal>unpack</goal>
-            </goals>
-            <configuration>
-              <artifactItems>
-                <artifactItem>
-                  <groupId>org.wildfly</groupId>
-                  <artifactId>wildfly-dist</artifactId>
-                  <version>10.1.0.Final</version>
-                  <type>zip</type>
-                  <overWrite>false</overWrite>
-                  <outputDirectory>target</outputDirectory>
-                </artifactItem>
-              </artifactItems>
-            </configuration>
-          </execution>
+			<id>unpack</id>
+			<phase>package</phase>
+			<goals>
+				<goal>unpack</goal>
+			</goals>
+			<configuration>
+				<artifactItems>
+					<artifactItem>
+						<groupId>org.wildfly</groupId>
+						<artifactId>wildfly-dist</artifactId>
+						<version>${version.wildfly}</version>
+						<type>zip</type>
+						<overWrite>false</overWrite>
+					</artifactItem>
+				</artifactItems>
+			</configuration>
+		  </execution>
         </executions>
       </plugin>
     </plugins>
