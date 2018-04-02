@@ -33,7 +33,6 @@
       </testResource>
     </testResources>
     <plugins>
-	  
       <plugin>
         <artifactId>maven-dependency-plugin</artifactId>
         <executions>
@@ -56,29 +55,6 @@
               </artifactItems>
             </configuration>
           </execution>
-		  <execution>
-            <id>copy-dependencies</id>
-            <phase>package</phase>
-            <goals><goal>copy-dependencies</goal></goals>
-          </execution>
-		  <execution>
-			<id>unpack</id>
-			<phase>package</phase>
-			<goals>
-				<goal>unpack</goal>
-			</goals>
-			<configuration>
-				<artifactItems>
-					<artifactItem>
-						<groupId>org.wildfly</groupId>
-						<artifactId>wildfly-dist</artifactId>
-						<version>${version.wildfly}</version>
-						<type>zip</type>
-						<overWrite>false</overWrite>
-					</artifactItem>
-				</artifactItems>
-			</configuration>
-		  </execution>
         </executions>
       </plugin>
     </plugins>
