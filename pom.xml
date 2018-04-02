@@ -60,7 +60,6 @@
 	  <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-war-plugin</artifactId>
-            <version>2.3</version>
             <configuration>
              <warName>${project.name}</warName>
              <outputDirectory>${project.build.directory}/wildfly-10.1.0.Final/standalone/deployments/</outputDirectory>
