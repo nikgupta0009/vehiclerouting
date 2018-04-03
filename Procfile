@@ -1,1 +1,1 @@
-web: mv target/Webopta-7.6.0.Final.war target/Webopta-7.6.0.Final.war.dodeploy && target/wildfly-10.1.0.Final/bin/standalone.sh -b=0.0.0.0 -Djboss.http.port=$PORT -Djboss.server.deploy.dir=target/
+web: mv target/Webopta-7.6.0.Final.war target/wildfly-10.1.0.Final/standalone/deployments/Webopta-7.6.0.Final.war.dodeploy && target/wildfly-10.1.0.Final/bin/standalone.sh -b=0.0.0.0 -Djboss.http.port=$PORT
