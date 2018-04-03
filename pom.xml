@@ -68,12 +68,6 @@
                     </server-args>
                 </configuration>
                 <executions>
-					<execution>
-                        <phase>deploy</phase>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                    </execution>
                     <execution>
                         <phase>deploy</phase>
                         <goals>
