@@ -67,6 +67,14 @@
                         <server-arg>-b=0.0.0.0</server-arg>
                     </server-args>
                 </configuration>
+                <executions>
+                    <execution>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
     </plugins>
   </build>
