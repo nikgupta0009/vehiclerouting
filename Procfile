@@ -1,1 +1,1 @@
-web:mvn wildfly:deploy
+web:  mvn wildfly:deploy
