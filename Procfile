@@ -1,1 +1,1 @@
-web: target/wildfly-10.1.0.Final/bin/standalone.sh -b=0.0.0.0 -Djboss.http.port=$PORT && target/wildfly-10.1.0.Final/bin/jboss-cli.sh --connect --command="deploy /app/target/Webopta-7.6.0.Final --force"
+web:    java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
