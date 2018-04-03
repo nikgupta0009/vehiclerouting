@@ -1,6 +1,7 @@
 {
   "name": "vehiclerouting",
   "scripts": {
+    "postdeploy": "target/wildfly-10.1.0.Final/bin/jboss-cli.sh --connect --command=\"deploy /app/target/Webopta-7.6.0.Final --force\""
   },
   "env": {
   },
