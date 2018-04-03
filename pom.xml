@@ -38,7 +38,7 @@
         <artifactId>heroku-maven-plugin</artifactId>
         <version>2.0.3</version>
 		<configuration>
-		  <warFile>${project.build.directory}/wildfly-10.1.0.Final/standalone/deployments/${project.name}.war</warFile>
+		  <warFile>target/wildfly-10.1.0.Final/standalone/deployments/${project.name}.war</warFile>
         </configuration>
       </plugin>
       <plugin>
