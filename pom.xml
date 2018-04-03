@@ -57,25 +57,6 @@
           </execution>
         </executions>
       </plugin>
-	  <plugin>
-                <groupId>org.wildfly.plugins</groupId>
-                <artifactId>wildfly-maven-plugin</artifactId>
-                <version>1.2.1.Final</version>
-				<configuration>
-                    <server-args>
-                        <server-arg>-Djboss.http.port=$PORT</server-arg>
-                        <server-arg>-b=0.0.0.0</server-arg>
-                    </server-args>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>deploy</phase>
-                        <goals>
-                            <goal>deploy</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
     </plugins>
   </build>
 
